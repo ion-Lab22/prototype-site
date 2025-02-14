@@ -21,125 +21,91 @@
       }
 
 /* ナビゲーション */
-      nav ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          display: flex;
-        }
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+}
 
-      nav ul li {
-          margin: 0 15px;
-      }
+.nav-menu a {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
 
-      nav ul li a {
-          text-decoration: none;
-          color: #333;
-          font-weight: bold;
-        }
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-      .header-buttons {
-          display: flex;
-          align-items: center;
-      }
+.blog-button, .contact-button {
+    background: #0073e6;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
 
-      .header-buttons button {
-          margin-left: 10px;
-          padding: 8px 15px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-        }
+.contact-button {
+    background: #005bb5;
+}
 
-        .tech-blog {
-            background-color: #4A90E2;
-            color: white;
-        }
+.search-icon {
+    width: 24px;
+    height: 24px;
+}
 
-        .contact {
-            background-color: #0099FF;
-            color: white;
-        }
+/* ニュースセクション */
+.news-section {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
 
-        .search {
-            font-size: 18px;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
+.news-section h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
 
-        /* NEWS セクション */
-        .news {
-            width: 80%;
-            margin: 50px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+.news-section h2 {
+    font-size: 14px;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
 
-        .news h2 {
-            font-size: 28px;
-            margin-bottom: 5px;
-        }
+.important-notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-        .subtitle {
-            color: #4A90E2;
-            font-size: 14px;
-        }
+.important-notice a {
+    background: #ffcccc;
+    color: #d60000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    margin: 5px 0;
+}
 
-        /* 重要なお知らせ */
-        .alerts {
-            margin: 20px 0;
-        }
+.news-list {
+    text-align: left;
+}
 
-        .alert {
-            background: #FFD1D1;
-            color: #D0021B;
-            padding: 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            border: 1px solid #D0021B;
-        }
+.news-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
 
-        /* ニュースリスト */
-        .news-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .news-list li {
-            background: white;
-            padding: 15px;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 16px;
-        }
-
-        .news-list li span {
-            font-weight: bold;
-            color: #555;
-        }
-
-        /* ボタン */
-        .news-button {
-            background: #007BFF;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-
-        .news-button:hover {
-            background: #0056b3;
-        }
+.news-button {
+    display: inline-block;
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
         
         /* ハンバーガーメニュー */
         .menu-button {
