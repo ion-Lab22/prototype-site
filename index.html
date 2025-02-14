@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ion Lab</title>
+    <meta charset="UTF-8" />
+    <meta property="og:locale" content="ja=jp">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ion Lab 近未来の電動ガン">
+    <meta property="og:description" content="電磁誘導を利用した近未来的なデザインの電動ガンを開発してます">
+    <meta property="og:url" content="https://ionlab.co.jp/">
+    <meta property="og:site_name" content="Ion Lab">
+    <meta property="og:image" content="file:///C:/Users/tensa/icon.ipg">
+
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="file:///C:/Users/tensa/icon.jpg">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">組織情報
+                                </a></li>
+                <li><a href="#">作品紹介
+                                </a></li>
+                <li><a href="#">テスト1
+                                </a></li>
+                <li><a href="#">テスト2
+                                </a></li>
+                <li><a href="#">テスト3
+                                </a></li>
+                <li><a href="#">ニュース
+                                </a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="#" class="blog-button">Tech Blog</a>
+            <a href="#" class="contact-button">お問い合わせ</a>
+        </div>
+    </header>
+
+    <!-- スマホ用メニュー -->
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#">企業情報</a></li>
+                <li><a href="#">自社パッケージ商品開発/販売</a></li>
+                <li><a href="#">システムインテグレーション</a></li>
+                <li><a href="#">ソフトウェア開発・評価/検証</a></li>
+                <li><a href="#">採用情報</a></li>
+                <li><a href="#">ニュース</a></li>
+            </ul>
+        </nav>
+    
+        <!-- JavaScript -->
+        <script>
+            function toggleMenu() {
+                var mobileNav = document.getElementById("mobileNav");
+                if (mobileNav.style.display === "flex") {
+                    mobileNav.style.display = "none";
+                } else {
+                    mobileNav.style.display = "flex";
+                }
+            }
+        </script>
+    
+    <!-- ニュースセクション -->
+    <main class="news-section">
+        <h1>News</h1>
+        <h2>ニュース</h2>
+        <div class="important-notice">
+            <a href="#">【重要】コードのテスト実施中
+             </a>
+        </div>
+        <ul class="news-list">
+            <li>
+            </li>
+            <li>2025/02/14 コードのテスト実施中 part.2
+             </li>
+        </ul>
+        <a href="#" class="news-button">ニュース一覧</a>
+    </main>
+</body>
+</html>
