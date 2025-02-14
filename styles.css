@@ -1,0 +1,194 @@
+/* 全体のスタイル */
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f8f8f8;
+        }
+
+      /* ヘッダー */
+      header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 15px 30px;
+          background: white;
+          border-bottom: 2px solid #ddd;
+        }
+
+      .logo img {
+          height: 50px;
+      }
+
+/* ナビゲーション */
+      nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+        }
+
+      nav ul li {
+          margin: 0 15px;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+        }
+
+      .header-buttons {
+          display: flex;
+          align-items: center;
+      }
+
+      .header-buttons button {
+          margin-left: 10px;
+          padding: 8px 15px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .tech-blog {
+            background-color: #4A90E2;
+            color: white;
+        }
+
+        .contact {
+            background-color: #0099FF;
+            color: white;
+        }
+
+        .search {
+            font-size: 18px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* NEWS セクション */
+        .news {
+            width: 80%;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .news h2 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #4A90E2;
+            font-size: 14px;
+        }
+
+        /* 重要なお知らせ */
+        .alerts {
+            margin: 20px 0;
+        }
+
+        .alert {
+            background: #FFD1D1;
+            color: #D0021B;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border: 1px solid #D0021B;
+        }
+
+        /* ニュースリスト */
+        .news-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .news-list li {
+            background: white;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .news-list li span {
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* ボタン */
+        .news-button {
+            background: #007BFF;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .news-button:hover {
+            background: #0056b3;
+        }
+        
+        /* ハンバーガーメニュー */
+        .menu-button {
+            display: none;
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* スマホ用メニュー */
+        .mobile-nav {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background: white;
+            border-top: 2px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .mobile-nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .mobile-nav ul li {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .mobile-nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+        }
+
+        /* スマホ用レイアウト */
+        @media (max-width: 768px) {
+            nav {
+                display: none; /* 通常のナビを非表示 */
+            }
+
+            .menu-button {
+                display: block; /* ハンバーガーアイコンを表示 */
+            }
+        }
