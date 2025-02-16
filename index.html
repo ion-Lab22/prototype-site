@@ -56,14 +56,10 @@
     
         <!-- JavaScript -->
         <script>
-            function toggleMenu() {
-                var mobileNav = document.getElementById("mobileNav");
-                if (mobileNav.style.display === "flex") {
-                    mobileNav.style.display = "none";
-                } else {
-                    mobileNav.style.display = "flex";
-                }
-            }
+        function toggleMenu() {
+            var mobileNav = document.getElementById("mobileNav");
+            mobileNav.classList.toggle("show");
+        }
         </script>
     
     <!-- ニュースセクション -->
