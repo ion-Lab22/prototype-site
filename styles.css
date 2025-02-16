@@ -13,7 +13,6 @@
           justify-content: space-between;
           padding: 15px 30px;
           background: white;
-          border-bottom: 2px solid #ddd;
         }
 
       .logo img {
@@ -70,7 +69,6 @@
       .news-section h2 {
           font-size: 14px;
           color: #0073e6;
-          margin-bottom: 20px;
       }
 
       .important-notice {
@@ -95,7 +93,6 @@
 
       .news-list li {
           padding: 10px;
-          border-bottom: 1px solid #ddd;
       }
         
         /* ハンバーガーメニュー */
@@ -129,7 +126,6 @@
 
         .mobile-nav ul li {
             padding: 15px;
-            border-bottom: 1px solid #ddd;
         }
 
         .mobile-nav ul li a {
