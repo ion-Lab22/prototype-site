@@ -149,12 +149,20 @@ body, h1, h2, ul, li, p, a {
     }
 
     /* スマホ用レイアウト */
-    @media (max-width: 768px) {
-        nav {
-            display: none; /* 通常のナビを非表示 */
-        }
-
-        .menu-button {
-            display: block; /* ハンバーガーアイコンを表示 */
-        }
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* PCナビを非表示 */
     }
+
+    .menu-button {
+        display: block; /* ハンバーガーアイコンを表示 */
+    }
+
+    .mobile-nav {
+        display: none; /* 初期状態では非表示 */
+    }
+
+    .mobile-nav.show {
+        display: flex; /* 表示時に適用 */
+    }
+}
