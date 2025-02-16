@@ -1,147 +1,108 @@
-/* 全体のスタイル */
-      body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: #f8f8f8;
-        }
+/* リセット */
+body, h1, h2, ul, li, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Arial", sans-serif;
+}
 
-      /* ヘッダー */
-      header {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 15px 30px;
-          background: white;
-        }
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-      .logo img {
-          height: 50px;
-      }
+.logo img {
+    height: 40px;
+}
 
-/* ナビゲーション */
-      .nav-menu ul {
-          display: flex;
-          gap: 20px;
-      }
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+}
 
-      .nav-menu a {
-          color: #333;
-          font-size: 14px;
-          font-weight: bold;
-      }
+.nav-menu a {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
 
-      .header-right {
-          display: flex;
-          align-items: center;
-          gap: 15px;
-      }
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-      .blog-button, .contact-button {
-          background: #0073e6;
-          color: white;
-          padding: 8px 15px;
-          border-radius: 5px;
-          font-size: 14px;
-      }
+.blog-button, .contact-button {
+    background: #0073e6;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
 
-      .contact-button {
-          background: #005bb5;
-      }
+.contact-button {
+    background: #005bb5;
+}
 
-      .search-icon {
-          width: 24px;
-          height: 24px;
-      }
+.search-icon {
+    width: 24px;
+    height: 24px;
+}
 
-      /* ニュースセクション */
-      .news-section {
-          max-width: 800px;
-          margin: 50px auto;
-          text-align: center;
-      }
+/* ニュースセクション */
+.news-section {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
 
-      .news-section h1 {
-          font-size: 28px;
-          font-weight: bold;
-      }
+.news-section h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
 
-      .news-section h2 {
-          font-size: 14px;
-          color: #0073e6;
-      }
+.news-section h2 {
+    font-size: 14px;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
 
-      .important-notice {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 20px;
-      }
+.important-notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-      .important-notice a {
-          background: #ffcccc;
-          color: #d60000;
-          padding: 10px 15px;
-          border-radius: 5px;
-          display: block;
-          margin: 5px 0;
-      }
+.important-notice a {
+    background: #ffcccc;
+    color: #d60000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    margin: 5px 0;
+}
 
-      .news-list {
-          text-align: center;
-      }
+.news-list {
+    text-align: left;
+}
 
-      .news-list li {
-          padding: 10px;
-      }
-        
-        /* ハンバーガーメニュー */
-        .menu-button {
-            display: none;
-            font-size: 24px;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
+.news-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
 
-        /* スマホ用メニュー */
-        .mobile-nav {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            width: 100%;
-            background: white;
-            border-top: 2px solid #ddd;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .mobile-nav ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        .mobile-nav ul li {
-            padding: 15px;
-        }
-
-        .mobile-nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            display: block;
-        }
-
-        /* スマホ用レイアウト */
-        @media (max-width: 768px) {
-            nav {
-                display: none; /* 通常のナビを非表示 */
-            }
-
-            .menu-button {
-                display: block; /* ハンバーガーアイコンを表示 */
-            }
-        }
+.news-button {
+    display: inline-block;
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
