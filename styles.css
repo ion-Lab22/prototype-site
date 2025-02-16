@@ -106,3 +106,55 @@ body, h1, h2, ul, li, p, a {
     border-radius: 5px;
     margin-top: 20px;
 }
+
+    /* ハンバーガーメニュー */
+    .menu-button {
+        display: none;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* スマホ用メニュー */
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        border-top: 2px solid #ddd;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .mobile-nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .mobile-nav ul li {
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .mobile-nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+    }
+
+    /* スマホ用レイアウト */
+    @media (max-width: 768px) {
+        nav {
+            display: none; /* 通常のナビを非表示 */
+        }
+
+        .menu-button {
+            display: block; /* ハンバーガーアイコンを表示 */
+        }
+    }
